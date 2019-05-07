@@ -40,6 +40,7 @@ public class AdminOrderControll {
 	
 	@RequestMapping("mainToAdminOrder")
 	public String mainToAdminOrder(){
+		sysoddsada
 		return "admin/order/adminOrder";
 	} 
 	

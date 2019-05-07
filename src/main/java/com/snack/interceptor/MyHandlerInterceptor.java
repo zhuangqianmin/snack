@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.snack.model.Admin;
 import com.snack.model.Permission;
 
 
@@ -17,6 +18,9 @@ public class MyHandlerInterceptor implements HandlerInterceptor{
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
+		
+		Admin ds=null;
+		ds.getAdId();
 		int k=0;
 		int p=0;
 		String uri=request.getRequestURI();
